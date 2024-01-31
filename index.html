@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+        .container{
+            width: 80%;height: 80%; background-color: white;display: flex;padding: 20px;justify-content: center;   
+        }
+        body{
+            height: 100vh;margin: 0%;display: flex;justify-content: center;align-items: center;
+        }
+        h1{
+            font-family: 'Rubik', sans-serif; margin-bottom: 40px;
+        }
+    
+        .inputholder{
+            margin-bottom: 35px;width: 350px;height: 35px;display: flex;align-items: center;border-bottom: solid 2px;overflow: hidden;
+        }
+        .img{
+            height:20px; object-fit: cover;
+        }
+        .input{
+            width: 100%;height: 100%;border: none; outline: none;
+        }
+        .checkbox{
+            display: flex;
+        }
+        .button{
+            background-color: #6EABE4;border: none;border-radius: 2px;min-width: 40px;min-height: 20px;padding: 15px;color: white;margin-top: 20px;padding-left: 30px;padding-right: 30px;cursor: pointer;
+        }
+        .right{
+            display: flex;flex-direction: column;align-items: center;
+        }
+        .office{
+            width: 100%;height: 100%;
+        }
+        .member{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="left">
+        <h1>Sign up</h1>
+        <div class="inputholder">
+            <img src="username.png" alt="" class="img">
+            <input type="text" placeholder="Name" class="input">
+        </div>
+        <div class="inputholder">
+            <img src="email.png" alt="" class="img">
+            <input type="email" placeholder="your Email" class="input">
+        </div>
+        <div class="inputholder">
+            <img src="password.png" alt="" class="img">
+            <input type="password" placeholder="password"class="input" >
+        </div>
+        <div class="inputholder">
+            <img src="password.png" alt="" class="img">
+            <input type="password" placeholder="Repeat password"class="input">
+        </div>
+        <div class="checkbox">
+            <input type="checkbox">
+            <p>I agree with all statement in <a href="#">Terms and Services</a></p>
+        </div>
+        <button class="button">Register</button>
+    </div>
+    <div class="right">
+        <div>
+            <img src="office set.png" alt="" class="office">
+        </div>
+        <div>
+            <a href="#" class="member">i am already a member</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
